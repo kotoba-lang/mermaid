@@ -12,7 +12,7 @@
      [:--- a b] (line) · [:-.-> a b] (dotted) · [:==> a b] (thick) · [:--x a b] · [:--o a b]
      [:subgraph :grp stmt…]             → subgraph grp … end
    Top level:  (flowchart :LR stmt…)   (dir :LR/:TD/:TB/:RL/:BT)"
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn- id [x] (if (keyword? x) (name x) (str x)))
 

@@ -2,7 +2,7 @@
   "Golden tests for kotoba.mermaid — the Mermaid flowchart hiccup. They pin node shapes, plain/labeled
    edges, dotted/thick arrows, subgraph nesting, and a whole flowchart with a header direction."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [mermaid.core :as m]))
 
 (deftest statements
